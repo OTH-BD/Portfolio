@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poopins', sans-serif;
+
+
+}
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+
+}
+.navbar a:hover, 
+.navbar a.active {
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display:none ;
+
+
+}
+ul.socialIcons {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .socialIcons li {
+    background-color: yellow;
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 2em;
+    overflow: hidden;
+  }
+  
+  .socialIcons li a {
+    display: block;
+    padding: 0.5em;
+    min-width: 1.28571429em;
+    max-width: 2.26571429em;
+    height: 2.28571429em;
+    white-space: nowrap;
+    line-height: 1.5em; /*it's working only when you write text with icon*/
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+  }
+  
+  .socialIcons li i {
+    margin-right: 0.5em;
+  }
+  
+  .socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 1em;
+  }
+  
+  .socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+  }
+
+  
+  .socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+  }
+  
+  
+  .socialIcons .linkedin {
+    background-color: #0976b4;
+    box-shadow: 0 0 16px #666666;
+  }
+
+.section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight:700 ;
+}
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight:700 ;
+    line-height: 1.3;
+}
+
