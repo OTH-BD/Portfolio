@@ -299,6 +299,21 @@ a:link, a:visited {
   font-size: 2rem;
   margin: 3rem;
  }
+ .socialIcons{
+  font-size: 0.5em; 
+ }
+
+ .home-content h3{
+  font-size: 1.8rem;
+ }
+ .home-content h1{
+  font-size: 4rem;
+ }
+ .home-img img{
+  width: 30vw;
+  margin-top: 20rem;
+ }
+
 
   
 }
