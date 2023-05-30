@@ -314,6 +314,10 @@ a:link, a:visited {
   margin-top: 20rem;
  }
 
+ .home{
+  display: block;
+  flex-direction: column;
+ }
 
   
 }
