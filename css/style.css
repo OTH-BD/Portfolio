@@ -705,6 +705,21 @@ input:checked~.animatbg{
     background-color: #3d3d3d;
 }
 
+.darkmode  .navbar a{
+  color: #000;
+}
+.darkmode .navbar a{
+  color: #000;
+}
+.darkmode .logo{
+  color: #000;
+
+}
+.darkmode #menu-icon{
+  color: #000;
+
+}
+
 /* .form-check{
    
     margin-top: 30px;
