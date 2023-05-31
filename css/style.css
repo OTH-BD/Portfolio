@@ -35,11 +35,12 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-  
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo{
     position: absolute;
     margin-left: 40px;
@@ -60,6 +61,7 @@ body{
 .navbar a.active {
     color: var(--main-color);
 }
+
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -146,6 +148,7 @@ section{
   margin-bottom: 2rem;
 }
 
+
 span{
   color: var(--main-color);
 
@@ -174,55 +177,6 @@ span{
     transform: translateY(0);
   }
 }
-/* .cv{
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  font-family: sans-serif;
-  color: var(--second-bg-color);
-  background: var(--main-color);
-  box-shadow: var(--second-bg-color);
-  width: 200px;
-  padding: 10px 27px;
-  letter-spacing: .1rem;
-  text-align: center;
-  border-radius: 4rem;
-  transition: .5s ease;
-
-
-}
-a span{
-  position: relative;
-  width: 1.5rem;
-  /* visibility: hidden; */
-
-/* }
-
-a span:after{
-  content: '\21D3';
-  font-size: 1.5rem;
-  position: absolute;
-  padding-left: 10px;
-  animation: down 1s linear infinite;
-
-}
-
-@keyframes down{
-  from{
-      top:-10px;
-      opacity: 0;
-
-  }
-  to{
-      top:10px;
-      opacity: 1;
-
-
-  }
-} */ 
-
-
-
 
 a span{
   position: relative;
@@ -267,13 +221,17 @@ a:link, a:visited {
 @media (max-width:768px) {
 
   body { 
+    display: block;
     font-size: 2em; 
  }
  .home-content h1{
   font-size: 1em; 
 
  }
-
+ .glowing-btn{
+  font-size: 0.7em;
+ }
+ 
  #menu-icon{
   display: block;
  }
@@ -299,6 +257,7 @@ a:link, a:visited {
   font-size: 2rem;
   margin: 3rem;
  }
+ 
  .socialIcons{
   font-size: 0.5em; 
  }
@@ -309,18 +268,24 @@ a:link, a:visited {
  .home-content h1{
   font-size: 4rem;
  }
- .home-img img{
-  width: 30vw;
-  margin-top: 20rem;
- }
+
 
  .home{
   display: block;
   flex-direction: column;
  }
+ .box .content img{
+  margin-left: auto;
+  margin-right: auto;
+ }
 
-  
-}
+
+  }
+
+
+
+
+
 
 
 
@@ -365,6 +330,8 @@ a:link, a:visited {
 
 /* -----------------------------------------------box animation -------------- -------------------------------*/
 .box{
+  display: flex;
+  justify-content: end;
   position: relative;
   width: 400px;
   height: 400px;
@@ -413,7 +380,7 @@ a:link, a:visited {
   content: '';
   position: absolute;
   inset:6px;
-  background-color: #1f242d;
+  /* background-color: #1f242d; */
   border-radius: 50%;
   z-index: 1;
 
@@ -422,19 +389,19 @@ a:link, a:visited {
 }
 .content{
   position: absolute;
-  inset: 30px;
-  border: 6px solid #070a1c;
+  inset: 10px;
+  
   z-index: 3;
   border-radius: 50%;
   overflow: hidden;
 }
 .content img{
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+
   transition: 0.5s;
   pointer-events: none;
 
@@ -543,28 +510,6 @@ a:link, a:visited {
 
 }
 
-/* .image img{
-  width: 20px;
-  height: 20px ;
-  object-fit: cover;
-  border-radius: 10px;
-  opacity: .8;
-
-}
-.card{
-  width: 350px;
-  height: 350px;
-
-}
-.card .card-content{
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
-
-
-} */
 
 
 /* /////////////////Heart//////////////////////////////////////// */
@@ -704,14 +649,12 @@ input:checked~.animatbg{
   
     background-color: #fafafa;
     color: rgb(0, 0, 0);
+   
 }
 .darkmode .modal-content{
     background-color: #3d3d3d;
 }
 
-.darkmode  .navbar a{
-  color: #000;
-}
 .darkmode .navbar a{
   color: #000;
 }
@@ -723,7 +666,6 @@ input:checked~.animatbg{
   color: #000;
 
 }
-
 /* .form-check{
    
     margin-top: 30px;
@@ -1167,11 +1109,6 @@ input:checked~.animatbg{
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .glowing-btn{
-    font-size: 0.7em;
-  }
-}
 
 
 h3 {
@@ -1220,6 +1157,104 @@ img {
   height: 100px;
   line-height: 2.3;
   transition: color .3s;
+}
+
+
+.wrapper.two {
+
+  font-size: 6rem;
+ 
+}
+.neon h1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-shadow: 2px 2px hsl(186 100% 69%);
+  margin: 1rem auto;
+  animation: neon 1s ease infinite;
+}
+@keyframes neon {
+  0%,
+  100% {
+      text-shadow: 0 0 10px #4078faa8, hsl(186 100% 69%), 0 0 20px hsl(186 100% 69%), 0 0 20px #7324fba8, 0 0 2px hsl(186 100% 69%), 2px 2px 2px hsl(186 100% 69%);
+      color: hsl(304, 79%, 55%);
+  }
+  50% {
+      text-shadow: hsl(186, 89%, 53%), 0 0 5px #5259c3, hsl(186 100% 69%), 0 0 5px #3700b7, 0 0 2pxhsl(186 100% 69%), 4px 4px 2px hsl(186 100% 69%);
+      color:  hsl(186 100% 69%);
+  }
+}
+
+
+
+.anim ul li{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+  opacity: 0;
+  background: radial-gradient(rgb(255, 42, 0),transparent,transparent);
+  bottom: 0;
+  left: 10vw;
+  animation: animated 15s linear infinite;
+
+}
+.anim ul li:nth-child(2){
+  left: 10vw;
+  animation-delay: 4s;
+
+}
+.anim ul li:nth-child(3){
+  left: 20vw;
+  animation-delay: 5s;
+
+}
+.anim ul li:nth-child(4){
+  left: 30vw;
+  animation-delay: 6s;
+
+}
+.anim ul li:nth-child(5){
+  left: 40vw;
+  animation-delay: 7s;
+
+}
+.anim ul li:nth-child(6){
+  left: 50vw;
+  animation-delay: 8s;
+
+}
+.anim ul li:nth-child(7){
+  left: 60vw;
+  animation-delay: 9s;
+
+}
+.anim ul li:nth-child(8){
+  left: 70vw;
+  animation-delay: 9s;
+
+}
+.anim ul li:nth-child(9){
+  left: 80vw;
+  animation-delay: 10s;
+
+}
+.anim ul li:nth-child(10){
+  left: 90vw;
+  animation-delay: 10s;
+
+}
+@keyframes animated{
+  0%{
+    transform: scale(0);
+    opacity: 1;
+    bottom:0;
+
+  }
+  100%{
+    transform: scale(10);
+    opacity: 0;
+    bottom:100vh;
+
+  }
 }
 
 
